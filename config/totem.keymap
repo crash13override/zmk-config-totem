@@ -123,9 +123,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &none     &none
-        &kp GRAVE  &none   &none     &none     &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE  &none
-&trans  &none      &none   &none     &none     &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT  &to 3  &trans
+        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &kp MINUS  &kp EQUAL
+        &kp GRAVE  &none   &none     &none     &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE   &none
+&trans  &none      &none   &none     &none     &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT   &to 3      &trans
                            &trans    &to 0     &trans               &trans         &to 1                 &trans
             >;
         };
