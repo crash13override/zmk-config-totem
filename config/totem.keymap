@@ -74,7 +74,7 @@
             &kp Q  &kp W  &kp E                 &kp R     &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P
             &kp A  &kp S  &kp D                 &kp F     &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI
 &kp LSHIFT  &kp Z  &kp X  &kp C                 &kp V     &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp BACKSPACE
-                          &mt LEFT_CONTROL TAB  &kp LGUI  &kp SPACE    &kp RET  &to 2  &kp RIGHT_ALT
+                          &mt LEFT_CONTROL TAB  &kp LGUI  &kp SPACE    &kp RET  &to 1  &kp RIGHT_ALT
             >;
         };
 
@@ -97,10 +97,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &none         &none      &kp UP        &kp EQUAL  &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9  &kp PLUS
-                &kp C_VOL_UP  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &kp C_VOL_DN  &kp PG_UP  &kp CAPS      &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp ASTERISK  &trans
-                                         &kp LEFT_GUI  &to 0      &trans      &trans    &to 2         &mt RIGHT_ALT NUMBER_0
+        &kp ESC       &none      &kp UP        &kp EQUAL  &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9  &kp PLUS
+        &kp C_VOL_UP  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6  &kp MINUS
+&trans  &kp C_VOL_DN  &kp PG_UP  &kp CAPS      &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp ASTERISK  &trans
+                                 &kp LEFT_GUI  &to 0      &trans      &trans    &to 2         &mt RIGHT_ALT NUMBER_0
             >;
         };
 
@@ -123,10 +123,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &kp MINUS  &kp EQUAL
-        &kp GRAVE  &none   &none     &none     &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE   &none
-&trans  &none      &none   &none     &none     &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT   &to 3      &trans
-                           &kp LGUI  &to 0     &trans               &trans         &to 1                 &trans
+        &kp ESC    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &kp MINUS  &kp EQUAL
+        &kp GRAVE  &kp EXCL  &none     &none     &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE   &none
+&trans  &none      &none     &none     &none     &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT   &to 3      &trans
+                             &kp LGUI  &to 0     &trans               &trans         &to 1                 &trans
             >;
         };
 
@@ -149,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &none  &none     &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &bt BT_NXT  &none         &none  &none     &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &kp ESC      &bt BT_PRV  &none         &none  &none     &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &to 0  &trans    &trans  &to 2   &trans
             >;
         };
 
