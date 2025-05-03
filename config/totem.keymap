@@ -97,10 +97,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none         &none      &kp UP        &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8                  &kp KP_N9  &kp KP_PLUS
-        &kp C_VOL_UP  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5                  &kp KP_N6  &kp KP_MINUS
-&trans  &kp C_VOL_DN  &kp PG_UP  &kp CAPS      &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2                  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                 &kp LEFT_GUI  &to 0      &trans      &trans    &to 2      &mt RIGHT_ALT KP_NUMBER_0
+                &none         &none      &kp UP        &kp EQUAL  &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9  &kp PLUS
+                &kp C_VOL_UP  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &kp C_VOL_DN  &kp PG_UP  &kp CAPS      &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp ASTERISK  &trans
+                                         &kp LEFT_GUI  &to 0      &trans      &trans    &to 2         &mt RIGHT_ALT NUMBER_0
             >;
         };
 
