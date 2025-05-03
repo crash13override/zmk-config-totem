@@ -14,6 +14,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -123,10 +124,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &kp MINUS  &kp EQUAL
-        &kp GRAVE  &none   &none     &none     &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE   &none
-&trans  &none      &none   &none     &none     &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT   &to 3      &trans
-                           &trans    &to 0     &trans               &trans         &to 1                 &trans
+        &kp EXCL   &kp AT          &kp HASH        &kp DLLR         &kp PRCNT            &kp CARET      &kp AMPS              &kp ASTRK              &kp MINUS  &kp EQUAL
+        &kp GRAVE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp SINGLE_QUOTE     &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PIPE   &none
+&trans  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DOUBLE_QUOTES    &kp LBKT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT   &to 3      &trans
+                                   &trans          &to 0            &trans               &trans         &to 1                 &trans
             >;
         };
 
